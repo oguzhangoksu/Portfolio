@@ -1,0 +1,59 @@
+.WhatsApp{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    background-image: url("image/WhatsApp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.Phone{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    background-image: url("image/Phone.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.Email{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    background-image: url("image/Email.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.Box2{
+    display:flex;
+    align-self: center;
+    flex-direction:column;
+    position:fixed;
+    justify-items: flex-start;
+    align-items: flex-start;
+    box-sizing: content-box;
+    color: rgb(0, 0, 0);
+    margin-top: 10%;
+    width: 35%;
+    height: 45%;
+     
+  }
+  .Box-Before2{
+    position:fixed;
+    display: flex;
+    width: 40%;
+    height: 45%;
+    margin-top:10%;
+    background-color: rgba(81, 79, 79, 0.7);
+    box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.5);  
+    z-index: -1;
+    opacity: .95;
+    backdrop-filter: blur(2px);
+    justify-content:center;
+    align-items: flex-end;
+    border-radius: 20px;
+  }
