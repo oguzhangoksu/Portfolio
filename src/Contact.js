@@ -72,10 +72,10 @@ export function Contact(){
                 </div>
                 
             </div>
-            {stateAbout===true?<Navigate to="/" />:<></>}
+            {stateAbout===true?<Navigate to="/Resume/" />:<></>}
             {/*stateResume===true?<Navigate to="/Resume" />:<></>*/}
-            {stateProjects===true?<Navigate to="/Projects" />:<></>}
-            {stateContact===true?<Navigate to="/Contact" />:<></>}
+            {stateProjects===true?<Navigate to="/Resume/Projects" />:<></>}
+            {stateContact===true?<Navigate to="/Resume/Contact" />:<></>}
             
         </div>
         

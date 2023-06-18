@@ -67,10 +67,10 @@ export function About(){
         {stateResumeDow===true?<div className='ResumeOnCursor' onMouseEnter={() => setStateResumeDow(true)} onMouseLeave={() => setStateResumeDow(false)} onClick={()=>window.open(Pdf)}>{"Resume"}<div className='Img'></div></div>
         :<div className='Resume' onMouseEnter={() => setStateResumeDow(true)} onMouseLeave={() => setStateResumeDow(false)} onClick={()=>window.open(Pdf)}>{"Resume"}<div className='Img'></div></div>}
       </div>
-      {stateAbout===true?<Navigate to="/" />:<></>}
+      {stateAbout===true?<Navigate to="/Resume/" />:<></>}
       {/*stateResume===true?<Navigate to="/Resume" />:<></>*/}
-      {stateProjects===true?<Navigate to="/Projects" />:<></>}
-      {stateContact===true?<Navigate to="/Contact" />:<></>}
+      {stateProjects===true?<Navigate to="/Resume/Projects" />:<></>}
+      {stateContact===true?<Navigate to="/Resume/Contact" />:<></>}
     </div>
   );
 }

@@ -38,10 +38,10 @@ export function Resume(){
                 :<div className='Linker'onMouseEnter={() => setStateOnCurserContact(true)} onMouseLeave={() => setStateOnCurserContact(false)} onClick={handleClickContact}>{"Contact"}</div>}
 
             </div>
-            {stateAbout===true?<Navigate to="/" />:<></>}
-            {stateResume===true?<Navigate to="/Resume" />:<></>}
-            {stateProjects===true?<Navigate to="/Projects" />:<></>}
-            {stateContact===true?<Navigate to="/Contact" />:<></>}
+            {stateAbout===true?<Navigate to="/Resume/" />:<></>}
+            {stateResume===true?<Navigate to="/Resume/Resume" />:<></>}
+            {stateProjects===true?<Navigate to="/Resume/Projects" />:<></>}
+            {stateContact===true?<Navigate to="/Resume/Contact" />:<></>}
             
         </div>
         
