@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cae1b985.css",
+    "main.js": "/static/js/main.befe2ff8.js",
+    "static/media/background2.jpg": "/static/media/background2.666355d22f55f4683c26.jpg",
+    "static/media/608535.png": "/static/media/608535.8e86f35eee987eab9d58.png",
+    "static/media/608335.jpg": "/static/media/608335.6d5bf79e7c876f383889.jpg",
+    "static/media/OĞUZHAN_GÖKSU_CV.pdf": "/static/media/OĞUZHAN_GÖKSU_CV.e2cfbf370c9173c84159.pdf",
+    "static/media/raspberry-pi.png": "/static/media/raspberry-pi.5fe109ee401f4cac010b.png",
+    "static/media/DHT11.png": "/static/media/DHT11.e52010beb036d32cbd53.png",
+    "static/media/linkedin.png": "/static/media/linkedin.1ab253f3468255e6c797.png",
+    "static/media/WhatsApp.png": "/static/media/WhatsApp.fc1ace91fb11e35b6c9a.png",
+    "static/media/Phone.png": "/static/media/Phone.b7bed2b35e4b732510b5.png",
+    "static/media/Email.png": "/static/media/Email.c30d507921a36768a82e.png",
+    "static/media/github.png": "/static/media/github.dc0da2116834af21bba7.png",
+    "static/media/right.png": "/static/media/right.985ca406c80939189600.png",
+    "static/media/left.png": "/static/media/left.11797537da2081dd5477.png",
+    "static/media/download.png": "/static/media/download.b066ba5d53f2a4dd509f.png",
+    "index.html": "/index.html",
+    "main.cae1b985.css.map": "/static/css/main.cae1b985.css.map",
+    "main.befe2ff8.js.map": "/static/js/main.befe2ff8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cae1b985.css",
+    "static/js/main.befe2ff8.js"
+  ]
+}
