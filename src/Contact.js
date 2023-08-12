@@ -1,4 +1,4 @@
-import './Contact.css';
+import './css/Contact.css';
 import {useState } from 'react';
 import {Navigate } from "react-router-dom";
 

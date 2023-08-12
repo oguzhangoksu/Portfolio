@@ -1,5 +1,5 @@
 import React from 'react';
-import './CustomScrollbar.css'; // Css file for CustomScrollbar.js
+import './css/CustomScrollbar.css'; // Css file for CustomScrollbar.js
 import {useState } from 'react';
 import image1 from "./image/raspberry-pi.png";
 import image2 from "./image/DHT11.png";

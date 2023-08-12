@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import {useState } from 'react';
 import { Navigate } from "react-router-dom";
 import Pdf from './Pdf/OĞUZHAN_GÖKSU_CV.pdf';

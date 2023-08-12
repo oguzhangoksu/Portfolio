@@ -1,6 +1,6 @@
 
 import{useState} from 'react';
-import "./Slide.css";
+import "./css/Slide.css";
 
 const ImageSlider = ({images}) => {
     const [index, setIndex] = useState(0);
