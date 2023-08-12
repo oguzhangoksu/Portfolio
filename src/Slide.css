@@ -51,21 +51,39 @@
     color: white;
 
 }
-.img1On{
-    display: flex;
-    justify-content: center;
-    align-self: flex-en;
-    margin-top: 50px;
-    background-image: url(./image/raspberry-pi.png);
+
+.onleft{
+    display:flex;
+    flex-direction:row;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 200px;
-    height: 200px;
     color: white;
     border-radius: 20px;
     background-color: rgba(14,94,113,255);
     border: 2px solid rgb(255, 255, 255); 
+}
+.onright{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(14,94,113,255);
+    border: 2px solid rgb(255, 255, 255); 
+
+}
+.offleft{
+    display:flex;
+    flex-direction:row;
+}
+.offright{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end
 }
 .img2{
     display: flex;
@@ -82,22 +100,7 @@
     color: white;
 
 }
-.img2On{
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    margin-top: 50px;
-    background-image: url(./image/DHT11.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    color: white;
-    border-radius: 20px;
-    background-color: rgba(14,94,113,255);
-    border: 2px solid rgb(255, 255, 255); 
-}
+
 .img3{
     display: flex;
     justify-content: center;
@@ -112,22 +115,7 @@
     border-radius: 20px;
     color: white;
 }
-.img3On{
-    display: flex;
-    justify-content: center;
-    align-self:flex-start;
-    margin-top: 50px;
-    background-image: url(./image/608335.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    color: white;
-    border-radius: 20px;
-    background-color: rgba(14,94,113,255);
-    border: 2px solid rgb(255, 255, 255); 
-}
+
 .img4{
     display: flex;
     justify-content: center;
@@ -142,22 +130,7 @@
     border-radius: 20px;
     color: white;
 }
-.img4On{
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    margin-top: 50px;
-    background-image: url(./image/608535.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    color: white;
-    border-radius: 20px;
-    background-color: rgba(14,94,113,255);
-    border: 2px solid rgb(255, 255, 255); 
-}
+
 .body{
     padding: 10px;
     text-align: left;

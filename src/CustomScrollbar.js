@@ -7,10 +7,6 @@ import image3 from "./image/608335.jpg";
 import image4 from "./image/608535.png";
 import ImageSlider from './ImageSlider';
 const CustomScrollbar = () => {
-    const [stateOnProject1,setStateOnProject1]=useState(false);
-    const [stateOnProject2,setStateOnProject2]=useState(false);
-    //const [stateOnProject3,setStateOnProject3]=useState(false);
-    //const [stateOnProject4,setStateOnProject4]=useState(false);
 
   function handleProjectClick(e){
     if(e===1){
@@ -30,6 +26,24 @@ const CustomScrollbar = () => {
     */
   }
 
+  function handleEnter(e){
+    if(e%2==0){
+      document.getElementById(`${e}`).className = "onright";
+    }
+    else{
+      document.getElementById(`${e}`).className = "onleft";
+    }
+  }
+  function handleLeave(e){
+    if(e%2==0){
+      document.getElementById(`${e}`).className = "offright";
+    }
+    else{
+      document.getElementById(`${e}`).className = "offleft";
+    }
+  }
+
+
 
   const images = [
     image1,
@@ -43,15 +57,17 @@ const CustomScrollbar = () => {
     <div className="custom-scrollbar">
       <div className="content">
           <ImageSlider images={images}></ImageSlider>
-            <div style={{display:'flex',flexDirection:'row'}}>
-            {stateOnProject1===true?<div className='img1On' onClick={()=>{handleProjectClick(1)}} onMouseEnter={() => setStateOnProject1(true)} onMouseLeave={() => setStateOnProject1(false)}>DeviceScan(CihazTarama)</div>
-            :<div className='img1'onClick={()=>{handleProjectClick(1)}} onMouseEnter={() => setStateOnProject1(true)} onMouseLeave={() => setStateOnProject1(false)}>DeviceScan(CihazTarama)</div>}
-            <div className='body'>At the place where I did my internship, IoT devices were used to meet the requirements of Industry 4.0 and enable data acquisition from automation machines in factories. During this usage process, they encountered issues such as power outages or the IoT devices shutting down unexpectedly. As a solution, they wanted to ensure that the IoT devices connected to the same internet were online and requested a live stream of information such as CPU temperature and RAM usage whenever needed. Consequently, a project was implemented to fulfill these requirements.</div>
+          
+            <div id="1" className='offright' onClick={()=>handleProjectClick(1)} onMouseEnter={()=>{handleEnter(1)}} onMouseLeave={()=>handleLeave(1)}>
+              <div className='img1'>DeviceScanner(CihazTarama)</div>
+              <div className='body'>At the place where I did my internship, IoT devices were used to meet the requirements of Industry 4.0 and enable data acquisition from automation machines in factories. During this usage process, they encountered issues such as power outages or the IoT devices shutting down unexpectedly. As a solution, they wanted to ensure that the IoT devices connected to the same internet were online and requested a live stream of information such as CPU temperature and RAM usage whenever needed. Consequently, a project was implemented to fulfill these requirements.</div>
             </div>
-            <div style={{display:'flex',flexDirection:'row',justifyContent:'flex-end'}}>
-            <div className='body'>During my internship, they asked me to develop a project to familiarize myself with the technologies and JavaScript language used. The project involved measuring the ambient humidity and temperature in real-time and displaying them in graphical form. The purpose of the project was to store the data as well.</div>
-            {stateOnProject2===true?<div className='img2On' onClick={()=>{handleProjectClick(2)}} onMouseEnter={() => setStateOnProject2(true)} onMouseLeave={() => setStateOnProject2(false)}>Humidity Temperature</div>
-            :<div className='img2'onClick={()=>{handleProjectClick(2)}} onMouseEnter={() => setStateOnProject2(true)} onMouseLeave={() => setStateOnProject2(false)}>Humidity-Temperature</div>}
+      
+            <div id ="2" className='offleft' onClick={()=>handleProjectClick(2)} onMouseEnter={()=>{handleEnter(2)}} onMouseLeave={()=>handleLeave(2)}>
+              
+              
+              <div className='body'>During my internship, they asked me to develop a project to familiarize myself with the technologies and JavaScript language used. The project involved measuring the ambient humidity and temperature in real-time and displaying them in graphical form. The purpose of the project was to store the data as well.</div>
+              <div className='img2'> Humidity-Temperature</div>
           </div>
           
       </div>
