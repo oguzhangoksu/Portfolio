@@ -5,57 +5,63 @@ import CustomScrollbar from './CustomScrollbar';
 
 export function Projects(){
     const [stateAbout,setStateAbout]=useState(false);
-    //const [stateResume,setStateResume]=useState(false);
     const [stateProjects,setStateProjects]=useState(false);
     const [stateContact,setStateContact]=useState(false);
-    const [stateOnCurserAbout,setStateOnCurserAbout]=useState(false);
-    //const [stateOnCurserResume,setStateOnCurserResume]=useState(false);
-    const [stateOnCurserProjects,setStateOnCurserProjects]=useState(false);
-    const [stateOnCurserContact,setStateOnCurserContact]=useState(false);
 
 
-    function handleClickAbout(e){
-        setStateAbout(true);
+
+    function handleClick(e){
+        if(e==="About"){
+          setStateAbout(true);
+        }
+        else if(e==="Projects"){
+          setStateProjects(true);
+        }
+        else if(e==="Contact"){
+          setStateContact(true);
+        }
     }
-    /*
-    function handleClickResume(){
-        setStateResume(true);
-    }*/
-    function handleClickProjects(){
-        setStateProjects(true);
+    function handleMouseEnter(e){
+      if(e==="About"){
+        document.getElementById("about").className = "LinkerOnCursor";
+      }
+      else if(e==="Resume"){
+        document.getElementById("resume").className = "LinkerOnCursor";
+      }
+      else if(e==="Projects"){
+        document.getElementById("projects").className = "LinkerOnCursor";
+      }
+      else if(e==="Contact"){
+        document.getElementById("contact").className = "LinkerOnCursor";
+      }
+
     }
-    function handleClickContact(){
-      setStateContact(true);
+    function handleMouseLeave(e){
+      if(e==="About"){
+        document.getElementById("about").className = "Linker";
+      }
+      else if(e==="Resume"){
+        document.getElementById("resume").className = "Linker";
+      }
+      else if(e==="Projects"){
+        document.getElementById("projects").className = "Linker";
+      }
+      else if(e==="Contact"){
+        document.getElementById("contact").className = "Linker";
+      }
+
     }
-
-    const scrollbars={
-        display:'flex ',
-        width: '500px ',
-        height: '500px',
-        justifySelf:'center',
-        alignSelf:'center',
-        marginTop:'10%',
-        color:'white'
-    }
-
-
-
     return(
         <div className="App">
             <div className="Menu">
-                {stateOnCurserAbout===true?<div style={{paddingRight:'0px'}} className='LinkerOnCursor' onMouseEnter={() => setStateOnCurserAbout(true)} onMouseLeave={() => setStateOnCurserAbout(false)} onClick={handleClickAbout}>{"About"}</div>
-                :<div style={{paddingRight:'0px'}} className='Linker'onMouseEnter={() => setStateOnCurserAbout(true)} onMouseLeave={() => setStateOnCurserAbout(false)} onClick={handleClickAbout} >{"About"}</div>}
-                {/*stateOnCurserResume===true?<div className='LinkerOnCursor' onMouseEnter={() => setStateOnCurserResume(true)} onMouseLeave={() => setStateOnCurserResume(false)} onClick={handleClickResume}>{"Resume"}</div>:
-                <div className='Linker' onMouseEnter={() => setStateOnCurserResume(true)} onMouseLeave={() => setStateOnCurserResume(false)} onClick={handleClickResume}>{"Resume"}</div>*/}
-                {stateOnCurserProjects===true?<div className='LinkerOnCursor'onMouseEnter={() => setStateOnCurserProjects(true)} onMouseLeave={() => setStateOnCurserProjects(false)} onClick={handleClickProjects}>{"Projects"}</div>:
-                <div className='Linker' onMouseEnter={() => setStateOnCurserProjects(true)} onMouseLeave={() => setStateOnCurserProjects(false)} onClick={handleClickProjects}>{"Projects"}</div>}
-                {stateOnCurserContact===true?<div className='LinkerOnCursor'onMouseEnter={() => setStateOnCurserContact(true)} onMouseLeave={() => setStateOnCurserContact(false)} onClick={handleClickContact}>{"Contact"}</div>
-                :<div className='Linker'onMouseEnter={() => setStateOnCurserContact(true)} onMouseLeave={() => setStateOnCurserContact(false)} onClick={handleClickContact}>{"Contact"}</div>}
+                <div id="about" className='Linker' onClick={()=>{handleClick("About")}} onMouseEnter={()=>{handleMouseEnter("About")}} onMouseLeave={()=>{handleMouseLeave("About")}}>About</div>
+                <div id="projects" className='Linker' onClick={()=>{handleClick("Projects")}} onMouseEnter={()=>{handleMouseEnter("Projects")}} onMouseLeave={()=>{handleMouseLeave("Projects")}} >Projects</div>
+                <div id="contact" className='Linker' onClick={()=>{handleClick("Contact")}} onMouseEnter={()=>{handleMouseEnter("Contact")}} onMouseLeave={()=>{handleMouseLeave("Contact")}}>Contact</div>
+
             </div>
-            <div style={{marginTop:'6%',width:'1050px',height:'100%',position:'fixed'}} className='Box-Before'></div>
+            <div style={{marginTop:'10%',width:'1050px',height:'100%',position:'fixed'}} className='Box-Before'></div>
             <CustomScrollbar  /> 
             {stateAbout===true?<Navigate to="/Resume/" />:<></>}
-            {/*stateResume===true?<Navigate to="/Resume" />:<></>*/}
             {stateProjects===true?<Navigate to="/Resume/Projects" />:<></>}
             {stateContact===true?<Navigate to="/Resume/Contact" />:<></>}
             

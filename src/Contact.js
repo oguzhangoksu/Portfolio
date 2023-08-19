@@ -4,41 +4,66 @@ import {Navigate } from "react-router-dom";
 
 export function Contact(){
     const [stateAbout,setStateAbout]=useState(false);
-    //const [stateResume,setStateResume]=useState(false);
     const [stateProjects,setStateProjects]=useState(false);
     const [stateContact,setStateContact]=useState(false);
-    const [stateOnCurserAbout,setStateOnCurserAbout]=useState(false);
-    //const [stateOnCurserResume,setStateOnCurserResume]=useState(false);
-    const [stateOnCurserProjects,setStateOnCurserProjects]=useState(false);
-    const [stateOnCurserContact,setStateOnCurserContact]=useState(false);
-    const [stateOnCurserEmail,setStateOnCurserEmail]=useState(false);
 
-    function handleClickAbout(e){
-        setStateAbout(true);
-    }/*
-    function handleClickResume(){
-        setStateResume(true);
-    }*/
-    function handleClickProjects(){
-        setStateProjects(true);
+    function handleClick(e){
+        if(e==="About"){
+          setStateAbout(true);
+        }
+        else if(e==="Projects"){
+          setStateProjects(true);
+        }
+        else if(e==="Contact"){
+          setStateContact(true);
+        }
+        else if(e==="Email"){
+            console.log("Email");
+            window.location.href = 'mailto:oguzhang16@gmail.com'
+        }
+            
+
     }
-    function handleClickContact(){
-      setStateContact(true);
+    function handleMouseEnter(e){
+        console.log("Mouse Enter",e);
+        if(e==="About"){
+            document.getElementById("about").className = "LinkerOnCursor";
+        }
+        else if(e==="Projects"){
+            document.getElementById("projects").className = "LinkerOnCursor";
+        }
+        else if(e==="Contact"){
+            document.getElementById("contact").className = "LinkerOnCursor";
+        }
+        else if(e==="Email"){
+            console.log("enter girdi")
+            document.getElementById("email").className = "EmailAdressOn";
+        }
+
     }
-    function handleEmailClick(){
-        window.location.href = 'mailto:oguzhang16@gmail.com'
+    function handleMouseLeave(e){
+        console.log("Mouse Leave",e);
+        if(e==="About"){
+            document.getElementById("about").className = "Linker";
+        }
+        else if(e==="Projects"){
+            document.getElementById("projects").className = "Linker";
+        }
+        else if(e==="Contact"){
+            document.getElementById("contact").className = "Linker";
+        }
+        else if(e==="Email"){
+            console.log("leave girdi")
+            document.getElementById("email").className = "EmailAdress";
+        }
+    
+
     }
     const body={
         color:'white',
         display:'flex',
         alignItems:'center',
-        height:'90px'
-    }
-    const body2={
-        color:'rgba(58,217,213,255)',
-        display:'flex',
-        alignItems:'center',
-        height:'90px'
+        height:'90px',
     }
 
 
@@ -46,14 +71,10 @@ export function Contact(){
     return(
         <div className="App">
             <div className="Menu">
-                {stateOnCurserAbout===true?<div style={{paddingRight:'0px'}} className='LinkerOnCursor' onMouseEnter={() => setStateOnCurserAbout(true)} onMouseLeave={() => setStateOnCurserAbout(false)} onClick={handleClickAbout}>{"About"}</div>
-                :<div style={{paddingRight:'0px'}} className='Linker'onMouseEnter={() => setStateOnCurserAbout(true)} onMouseLeave={() => setStateOnCurserAbout(false)} onClick={handleClickAbout} >{"About"}</div>}
-                {/*stateOnCurserResume===true?<div className='LinkerOnCursor' onMouseEnter={() => setStateOnCurserResume(true)} onMouseLeave={() => setStateOnCurserResume(false)} onClick={handleClickResume}>{"Resume"}</div>:
-                <div className='Linker' onMouseEnter={() => setStateOnCurserResume(true)} onMouseLeave={() => setStateOnCurserResume(false)} onClick={handleClickResume}>{"Resume"}</div>*/}
-                {stateOnCurserProjects===true?<div className='LinkerOnCursor'onMouseEnter={() => setStateOnCurserProjects(true)} onMouseLeave={() => setStateOnCurserProjects(false)} onClick={handleClickProjects}>{"Projects"}</div>:
-                <div className='Linker' onMouseEnter={() => setStateOnCurserProjects(true)} onMouseLeave={() => setStateOnCurserProjects(false)} onClick={handleClickProjects}>{"Projects"}</div>}
-                {stateOnCurserContact===true?<div className='LinkerOnCursor'onMouseEnter={() => setStateOnCurserContact(true)} onMouseLeave={() => setStateOnCurserContact(false)} onClick={handleClickContact}>{"Contact"}</div>
-                :<div className='Linker'onMouseEnter={() => setStateOnCurserContact(true)} onMouseLeave={() => setStateOnCurserContact(false)} onClick={handleClickContact}>{"Contact"}</div>}
+                <div id="about" className='Linker' onClick={()=>{handleClick("About")}} onMouseEnter={()=>{handleMouseEnter("About")}} onMouseLeave={()=>{handleMouseLeave("About")}}>About</div>
+                <div id="projects" className='Linker' onClick={()=>{handleClick("Projects")}} onMouseEnter={()=>{handleMouseEnter("Projects")}} onMouseLeave={()=>{handleMouseLeave("Projects")}} >Projects</div>
+                <div id="contact" className='Linker' onClick={()=>{handleClick("Contact")}} onMouseEnter={()=>{handleMouseEnter("Contact")}} onMouseLeave={()=>{handleMouseLeave("Contact")}}>Contact</div>
+
             </div>
             <div className='Box-Before2'></div>
             <div className='Box2'>
@@ -67,13 +88,11 @@ export function Contact(){
                 </div>
                 <div style={{display:'flex',flexDirection:'row'}}>
                     <div className='Email'></div>
-                    {stateOnCurserEmail===true?<div style={body2} onMouseEnter={() => setStateOnCurserEmail(true)} onMouseLeave={() => setStateOnCurserEmail(false)} href={'mailto:oguzhang16@gmail.com'} onClick={handleEmailClick}>oguzhang16@gmail.com</div>
-                    :<div style={body} onMouseEnter={() => setStateOnCurserEmail(true)} onMouseLeave={() => setStateOnCurserEmail(false)} href={'mailto:oguzhang16@gmail.com'} onClick={handleEmailClick}>oguzhang16@gmail.com</div>}
+                    <div id="email" className="EmailAdress" href={'mailto:oguzhang16@gmail.com'} onClick={()=>{handleClick("Email")}} onMouseEnter={()=>{handleMouseEnter("Email")}} onMouseLeave={()=>{handleMouseLeave("Email")}}>oguzhang@gmail.com</div>                
                 </div>
                 
             </div>
             {stateAbout===true?<Navigate to="/Resume/" />:<></>}
-            {/*stateResume===true?<Navigate to="/Resume" />:<></>*/}
             {stateProjects===true?<Navigate to="/Resume/Projects" />:<></>}
             {stateContact===true?<Navigate to="/Resume/Contact" />:<></>}
             
@@ -84,23 +103,3 @@ export function Contact(){
 }
 
 export default Contact;
-
-
-/*
-
-                <div style={{display:'flex',flexDirection:'row',justifySelf:'flex-end'}}>
-                    <div className='WhatsApp'></div>
-                    <div style={{color:'white',alignItems:'center',justifyContent:'center'}}>asdsadasdsddasadsaasdasdasdasdasdasdasdasdasdasds</div>
-                </div>
-                <div style={{display:'flex',flexDirection:'row'}}>
-                    <div className='Phone'></div>
-                    <div style={{color:'white',alignItems:'center',justifyContent:'center'}}>asdsadasdasdsdasdasdasdasdasds</div>
-                </div>
-                <div style={{display:'flex',flexDirection:'row'}}>
-                    <div className='Email'></div>
-                    <div style={{color:'white',alignItems:'center',justifyContent:'center'}}>asdsadasdasdsdasdasdasdasdasds</div>
-                    
-                </div>
-
-
-*/

@@ -27,6 +27,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+    
+}
+.EmailAdress{
+    color:white;
+    display:flex;
+    align-items:center;
+    height:90px;
+    cursor:pointer;
+}
+.EmailAdressOn{
+    color:rgb(58,217,213,255);
+    display:flex;
+    align-items:center;
+    height:90px;
+    cursor: pointer;
 }
 .Box2{
     display:flex;

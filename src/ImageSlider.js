@@ -27,6 +27,7 @@ const ImageSlider = ({images}) => {
         backgroundSize:'cover',
         backgroundImage:`url(${images[index]})`,
         zIndex:'-1',
+        transition: "0.5s ease-in-out",
     }
 
 
