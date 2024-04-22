@@ -2,17 +2,18 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom';
 import "../styles/style.css";
 function NavBar() {
 
     return(
         <Navbar expand="lg" variant="dark" fixed='top' bg='red' >
         <Container >
-          <Navbar.Brand href="/Resume"><img src={logo} className='navbar-logo' width={70} height={70}  ></img></Navbar.Brand>
+          <Navbar.Brand as={Link} to ="/"><img src={logo} className='navbar-logo' width={70} height={70}  ></img></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav " />
           <Navbar.Collapse id="basic-navbar-nav " >
             <Nav className="ms-auto ">
-              <Nav.Link href="/Resume"> 
+              <Nav.Link as={Link} to ="/"> 
                 <div class="bottom-container">
                   <button class="animated-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16" style={{marginRight:"3px",color:"#ff4c38"}}>
@@ -22,7 +23,7 @@ function NavBar() {
                   Home
                   </button>
                 </div></Nav.Link>
-              <Nav.Link href="/Resume/about" >
+              <Nav.Link as={Link} to ="/about" >
                 <div class="bottom-container">
                   <button class="animated-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16" style={{marginRight:"3px",color:"#ff4c38"}}>
@@ -33,7 +34,7 @@ function NavBar() {
                   </button>
                 </div>
               </Nav.Link>
-              <Nav.Link href="/Resume/project" >
+              <Nav.Link as={Link} to ="/project" >
                 <div class="bottom-container">
                   
                   <button class="animated-button">
@@ -44,7 +45,7 @@ function NavBar() {
                   </button>
                 </div>
               </Nav.Link>
-              <Nav.Link href="/Resume/resume" >
+              <Nav.Link as={Link} to ="/resume" >
                 <div class="bottom-container">
                   <button class="animated-button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16" style={{marginRight:"3px",color:"#ff4c38"}}>

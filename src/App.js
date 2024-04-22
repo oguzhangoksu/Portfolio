@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import About from "./components/About.js";
 import Resume from"./components/Resume.js";
 import Footer from "./components/Footer.js";
+import { HashRouter } from 'react-router-dom';
 import {
   Route,
   Routes,
@@ -13,19 +14,20 @@ import {
 
 function App() {
   return (
-    
+      <HashRouter>
       <div className="App">
         <Navbar />
         <Routes>
-          <Route exact path="Resume/" element={<Home/>} />
-          <Route path="Resume/about" element={<About/>} />
-          <Route path="Resume/project" element={<Projects/>} />
-          <Route path="Resume/resume" element={<Resume/>} />
+          <Route exact path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/project" element={<Projects/>} />
+          <Route path="/resume" element={<Resume/>} />
           
           
         </Routes>
         <Footer/>
       </div>
+      </HashRouter>
     
     
   );
