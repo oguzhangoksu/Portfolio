@@ -18,10 +18,10 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/project" element={<Projects/>} />
-          <Route path="/resume" element={<Resume/>} />
+          <Route path="/Resume" element={<Home/>} />
+          <Route path="/Resume/about" element={<About/>} />
+          <Route path="/Resume/project" element={<Projects/>} />
+          <Route path="/Resume/resume" element={<Resume/>} />
           <Route path="*" element={<Navigate to="/"/>} />
           
         </Routes>
