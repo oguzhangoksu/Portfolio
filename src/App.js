@@ -8,7 +8,7 @@ import Footer from "./components/Footer.js";
 import {
   Route,
   Routes,
-  Navigate
+
 } from "react-router-dom";
 
 function App() {
@@ -17,10 +17,10 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/project" element={<Projects/>} />
-          <Route path="/resume" element={<Resume/>} />
+          <Route exact path="Resume/" element={<Home/>} />
+          <Route path="Resume/about" element={<About/>} />
+          <Route path="Resume/project" element={<Projects/>} />
+          <Route path="Resume/resume" element={<Resume/>} />
           
           
         </Routes>

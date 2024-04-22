@@ -8,7 +8,7 @@ function NavBar() {
     return(
         <Navbar expand="lg" variant="dark" fixed='top' bg='red' >
         <Container >
-          <Navbar.Brand href="/home"><img src={logo} className='navbar-logo' width={70} height={70}  ></img></Navbar.Brand>
+          <Navbar.Brand href="/Resume"><img src={logo} className='navbar-logo' width={70} height={70}  ></img></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav " />
           <Navbar.Collapse id="basic-navbar-nav " >
             <Nav className="ms-auto ">
