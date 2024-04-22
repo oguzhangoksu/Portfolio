@@ -1,0 +1,238 @@
+.background-image{
+    z-index: -1000;
+    background-image: url('../assets/solar_system_minimal_blue_art_4k.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    margin: 0px !important;
+}
+.navbar {
+    background-color: transparent !important;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+}
+.navbar-logo{
+    transition: transform 0.3s ease; /* Transition for smooth animation */
+}
+.navbar-logo:hover {
+    transform: translateY(-5px); /* Move the button upwards on hover */
+}
+
+
+.animated-button {
+    background-color: transparent;
+    border: 3px solid #ff4c38;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Transition for smooth animation */
+}
+
+.animated-button:hover {
+    transform: translateY(-5px); /* Move the button upwards on hover */
+}
+
+.home-content{
+    position: relative;
+    z-index: 1000;
+    padding: 100px 20px !important;
+    margin: 0px !important;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.font-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.font-family{
+    white-space: pre-line;
+    font-size:  0.7em;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    color: 'white'
+}
+.photo{
+    width: 500px;
+    height: 500px;
+}
+
+.about-content{
+    position: relative;
+    z-index: 1000;
+    padding: 100px 20px !important;
+    margin: 0px !important;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.about-content2{
+    position: relative;
+    z-index: 1000;
+    padding: 20px;
+    margin: 0px !important;
+
+}
+.about-font1{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;    
+    font-size:  1em;
+    text-align: left;
+}
+.about-font2{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;    
+    font-size:  0.7em;
+    text-align: left;
+}
+.about-header{
+    text-align: center;
+    font-size: 1.7em;
+    color: #ff4c38;
+    font-family: 'Roboto', sans-serif;
+}
+.rounded-background {
+    margin-top:4%;
+    border-radius: 20px; /* Adjust the value to control the roundness of corners */
+  }
+.about-icon-container{
+    transition: transform 0.3s ease; /* Transition for smooth animation */
+    z-index: 1000;
+    max-width: 200px !important;
+    text-align: center !important;
+
+
+}
+.about-icon-container:hover  {
+    transform: translateY(-10px) !important; /* Move the button upwards on hover */
+}
+.person-avatar{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid #ff4c38;
+    box-shadow: 5px -4px 5px 0px rgba(255,76,56,0.5);
+    -webkit-box-shadow: 5px -4px 5px 0px rgba(255,76,56,0.5);
+    -moz-box-shadow: 5px -4px 5px 0px rgba(255,76,56,0.5);
+    background: rgba(0, 0, 1, 0.45);
+    
+
+}
+.about-icon{
+    border: 2px solid #ff4c38;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 1, 0.6);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 5px -4px 5px 0px rgba(255,76,56,0.5);
+    -webkit-box-shadow: 5px -4px 5px 0px rgba(255,76,56,0.5);
+    -moz-box-shadow: 5px -4px 5px 0px rgba(255,76,56,0.5);
+    max-width: 150px;
+    max-height: 150px;
+    width: 150px;
+    height: 150px;
+    
+}
+.projetcs-content{
+    position: relative;
+    z-index: 1000;
+    padding: 100px 20px !important;
+    margin: 0px !important;
+
+}
+.project-shader{
+    background-color: rgba(0, 0, 1, 0.6);
+    padding: 20px;
+}
+
+.projects-card{
+    background-color:transparent !important;
+    border: 2px solid #ff4c38 !important;
+    height: 100% !important;
+    align-items: center !important;
+    box-shadow: 5px -4px 5px 0px rgba(255,76,56,0.5);
+    -webkit-box-shadow: 5px -4px 5px 0px rgba(255,76,56,0.5);
+    -moz-box-shadow: 5px -4px 5px 0px rgba(255,76,56,0.5);
+
+}
+.projects-font{
+    color: white !important;
+    text-align: center !important;
+    font-family: 'Roboto', sans-serif !important;
+
+}
+.projects-image{
+    width: 70% !important;
+    height: 35% !important;
+    object-fit: cover !important;
+    margin: 10px;
+}
+.projects-button{
+    width:150px !important;
+    color:black !important;
+}
+.resume-content{
+    position: relative;
+    z-index: 1000;
+    padding: 100px 20px !important;
+    margin: 0px !important;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.iframe-container{
+    display: block;
+    width: 50vw !important;
+    height: 100vh !important;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(0, 0, 1, 0.45);
+    color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.footer-icon-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: transform 0.3s ease; /* Transition for smooth animation */
+}
+.footer-icon{
+    transition: transform 0.3s ease; /* Transition for smooth animation */
+}
+.footer-icon:hover {
+    transform: translateY(-5px); /* Move the button upwards on hover */
+}
+    
+

@@ -1,22 +1,34 @@
 
-import './css/App.css';
-import{useState} from 'react';
-import{Link,Route,Routes} from 'react-router-dom';
-import About from './About';
-import Resume from './Resume';
-import Projects from './Projects';
-import Contact from'./Contact';
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import About from "./components/About.js";
+import Resume from"./components/Resume.js";
+import Footer from "./components/Footer.js";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate
+} from "react-router-dom";
+
 function App() {
-
-
   return (
-    <>
-      <Routes>
-        <Route  path='/Resume/' element={<About />}/>
-        <Route  path='/Resume/Projects' element={<Projects/>}/>
-        <Route  path='/Resume/Contact' element={<Contact/>}/>
-      </Routes>
-    </>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/project" element={<Projects/>} />
+          <Route path="/resume" element={<Resume/>} />
+          <Route path="*" element={<Navigate to="/"/>} />
+          
+        </Routes>
+        <Footer/>
+      </div>
+    </Router>
+    
   );
 }
 
