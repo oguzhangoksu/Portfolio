@@ -6,7 +6,7 @@ import About from "./components/About.js";
 import Resume from"./components/Resume.js";
 import Footer from "./components/Footer.js";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate
