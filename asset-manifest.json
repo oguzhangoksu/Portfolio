@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.a0788b05.css",
-    "main.js": "/Portfolio/static/js/main.75cdc7e6.js",
+    "main.js": "/Portfolio/static/js/main.edb15ef0.js",
     "static/js/592.fc1c8623.chunk.js": "/Portfolio/static/js/592.fc1c8623.chunk.js",
     "static/media/TermProject.gif": "/Portfolio/static/media/TermProject.310ac208bbbbf8b10ba5.gif",
     "static/media/Homework.gif": "/Portfolio/static/media/Homework.71560fb0bb8ad748a630.gif",
@@ -14,7 +14,7 @@
     "static/media/PaintSimulation.png": "/Portfolio/static/media/PaintSimulation.40641636d79a2726eeaa.png",
     "static/media/person-avatar.png": "/Portfolio/static/media/person-avatar.e7d3438716e584fd72fa.png",
     "static/media/logo.png": "/Portfolio/static/media/logo.9ea35e5e2f7af7d05cb1.png",
-    "static/media/resume_oguzhan_goksu.pdf": "/Portfolio/static/media/resume_oguzhan_goksu.f3a5971050297fbce18c.pdf",
+    "static/media/resume_oguzhan_goksu.pdf": "/Portfolio/static/media/resume_oguzhan_goksu.209e509f727509300170.pdf",
     "static/media/maze_solver.gif": "/Portfolio/static/media/maze_solver.bc5ebcbd31a11a4fc05e.gif",
     "static/media/DHT11.png": "/Portfolio/static/media/DHT11.e52010beb036d32cbd53.png",
     "static/media/embedded.png": "/Portfolio/static/media/embedded.4da6a22c1bbdfabbc3ad.png",
@@ -35,11 +35,11 @@
     "static/media/c.svg": "/Portfolio/static/media/c.c86ab343915e382feeddbee294b35c0a.svg",
     "static/media/icons8-css.svg": "/Portfolio/static/media/icons8-css.64fa1d1c4801d931c3717be71f6c020e.svg",
     "main.a0788b05.css.map": "/Portfolio/static/css/main.a0788b05.css.map",
-    "main.75cdc7e6.js.map": "/Portfolio/static/js/main.75cdc7e6.js.map",
+    "main.edb15ef0.js.map": "/Portfolio/static/js/main.edb15ef0.js.map",
     "592.fc1c8623.chunk.js.map": "/Portfolio/static/js/592.fc1c8623.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a0788b05.css",
-    "static/js/main.75cdc7e6.js"
+    "static/js/main.edb15ef0.js"
   ]
 }
