@@ -26,7 +26,9 @@ function Home() {
             <div className="col-lg-6" style={{textAlign:"center"}}>
               <div >
                 <p className='font-family' style={{color:"#ff4c38",fontSize:"1.5em"}}>Let Me Introduce My Self</p>
-                <p className='font-family'>Currently in my forth year of pursuing a degree in Computer Engineering.Throughout my academic journey in this captivating field, I have developed a comprehensive understanding of both the hardware and software facets of computing. I have refined my programming abilities in languages such as C++, Java, and Python, and also acquired practical knowledge in areas like digital circuit design and embedded systems. Outside of the school, I experienced with React, Javascript and Mysql in my internship.Right now,I be occupied in doing few project on my on.</p>
+                <p className='font-family'>As a recent graduate of Antalya Bilim University with a degree in Computer Engineering, I am proud to have completed my studies with high honors, ranking third in both my faculty and department. Throughout my academic journey, I have cultivated a robust understanding of the hardware and software aspects of computing. My programming expertise spans several languages, including C++/C, Java, Python, and JavaScript. Additionally, I have gained practical experience in digital circuit design and embedded systems.
+During my graduation project, I acquired experience in AI model training using TensorFlow, further solidifying my skills in machine learning and artificial intelligence. Beyond my academic pursuits, I have applied my skills in professional settings, working with React, JavaScript, MySQL, Django and Node.js during my internship. I am also actively engaged in independent projects that further hone my abilities and expand my knowledge base. My dedication to continuous learning and passion for innovation drives me to excel in the dynamic field of computer engineering.
+</p>
               </div>
             </div>
             <div className="col-lg-6 font-home">

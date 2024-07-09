@@ -2,7 +2,7 @@ import '../styles/style.css';
 import Container from "react-bootstrap/esm/Container";
 
 import React from 'react';
-import pdf from '../resume/Oğuzhan-Göksu.pdf';
+import pdf from '../resume/resume_oguzhan_goksu.pdf';
 import Button from 'react-bootstrap/Button';
 
 function Resume() {
@@ -27,7 +27,7 @@ function Resume() {
                     </div>
                     <div className="row" >
                         <div className='iframe-container'>
-                            <iframe src={pdf} width="100%" height="600px" />    
+                            <iframe src={pdf} width="100% !important" height="600px" />    
                         </div>
                     </div>
                 
