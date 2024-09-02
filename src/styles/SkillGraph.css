@@ -1,0 +1,51 @@
+.home-section {
+    position: relative;
+  }
+  
+  .skill-graph-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: 2;
+    pointer-events: none; /* This allows clicks to pass through to the content underneath */
+  }
+  
+  .skill-graph-overlay h2 {
+    pointer-events: auto; /* Make the title clickable */
+  }
+  
+  .skill-graph-overlay > div {
+    pointer-events: auto; /* Make the graph interactive */
+  }
+
+  .background{
+    z-index: -1000;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    margin: 0px !important;
+}
+.canvasContainer {
+  margin: auto;
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookmarkContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roundCanvas {
+  height: 80vmin !important;
+  overflow: hidden;
+  border-radius: 10%;
+}
+

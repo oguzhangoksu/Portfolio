@@ -3,7 +3,7 @@ import image1 from '../assets/working4-removebg.png';
 import image2 from '../assets/work5-preview.png';
 import Image from 'react-bootstrap/Image';
 import '../styles/style.css';
-import HomeFont from './HomeFont';
+import HomeFont from '../components/HomeFont';
 
 function Home() {
   return (
