@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a0788b05.css",
-    "main.js": "/Portfolio/static/js/main.edb15ef0.js",
+    "main.css": "/Portfolio/static/css/main.bab41097.css",
+    "main.js": "/Portfolio/static/js/main.5263d056.js",
     "static/js/592.fc1c8623.chunk.js": "/Portfolio/static/js/592.fc1c8623.chunk.js",
     "static/media/TermProject.gif": "/Portfolio/static/media/TermProject.310ac208bbbbf8b10ba5.gif",
     "static/media/Homework.gif": "/Portfolio/static/media/Homework.71560fb0bb8ad748a630.gif",
@@ -19,6 +19,8 @@
     "static/media/DHT11.png": "/Portfolio/static/media/DHT11.e52010beb036d32cbd53.png",
     "static/media/embedded.png": "/Portfolio/static/media/embedded.4da6a22c1bbdfabbc3ad.png",
     "static/media/embedded2.png": "/Portfolio/static/media/embedded2.7bd51d8163652ace1566.png",
+    "static/media/postgresql-svgrepo-com.svg": "/Portfolio/static/media/postgresql-svgrepo-com.9aed68683d15cfc3c3fd8ddf1d89ff4e.svg",
+    "static/media/spring-svgrepo-com.svg": "/Portfolio/static/media/spring-svgrepo-com.6e51554cb906dd644e07d5d92a157cbf.svg",
     "static/media/mysql-logo-svgrepo-com.svg": "/Portfolio/static/media/mysql-logo-svgrepo-com.5dbd7ffb56a921cecde426cca82f0df4.svg",
     "static/media/icons8-django.svg": "/Portfolio/static/media/icons8-django.88b944cb53936cbfcc4a577ba554c7e3.svg",
     "static/media/icons8-react.svg": "/Portfolio/static/media/icons8-react.873a95381db622d9638009c613a4d519.svg",
@@ -31,15 +33,19 @@
     "static/media/c++.svg": "/Portfolio/static/media/c++.813ccd234efbeb18aea14ff858f84a23.svg",
     "static/media/icons8-javascript.svg": "/Portfolio/static/media/icons8-javascript.2558f52e3a39364e670c47ab1d1c8846.svg",
     "static/media/git-svgrepo-com.svg": "/Portfolio/static/media/git-svgrepo-com.b5752c70c30d4ed9f4e6a2c57773d4e5.svg",
+    "static/media/firebase-svgrepo-com.svg": "/Portfolio/static/media/firebase-svgrepo-com.8f69a13150a1594d8fb73df74f12b548.svg",
+    "static/media/github-svgrepo-com.svg": "/Portfolio/static/media/github-svgrepo-com.f997ec2c65ef0122dfd1366baadc698e.svg",
+    "static/media/docker-svgrepo-com.svg": "/Portfolio/static/media/docker-svgrepo-com.402471a8309d58457b2412d97000f7cb.svg",
     "index.html": "/Portfolio/index.html",
+    "static/media/logo-microsoft-vs-code-svgrepo-com.svg": "/Portfolio/static/media/logo-microsoft-vs-code-svgrepo-com.003fce195fdb48e4a8a440c854bb742d.svg",
     "static/media/c.svg": "/Portfolio/static/media/c.c86ab343915e382feeddbee294b35c0a.svg",
     "static/media/icons8-css.svg": "/Portfolio/static/media/icons8-css.64fa1d1c4801d931c3717be71f6c020e.svg",
-    "main.a0788b05.css.map": "/Portfolio/static/css/main.a0788b05.css.map",
-    "main.edb15ef0.js.map": "/Portfolio/static/js/main.edb15ef0.js.map",
+    "main.bab41097.css.map": "/Portfolio/static/css/main.bab41097.css.map",
+    "main.5263d056.js.map": "/Portfolio/static/js/main.5263d056.js.map",
     "592.fc1c8623.chunk.js.map": "/Portfolio/static/js/592.fc1c8623.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0788b05.css",
-    "static/js/main.edb15ef0.js"
+    "static/css/main.bab41097.css",
+    "static/js/main.5263d056.js"
   ]
 }
